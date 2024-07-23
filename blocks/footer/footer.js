@@ -141,6 +141,7 @@ export default async function decorate(block) {
   }
 
   block.append(footer);
+  block.style.textAlign = "center";
   block.classList.add('new-footer'); // add class for the styles
   footer.closest('footer').classList.add('appear');
 }
