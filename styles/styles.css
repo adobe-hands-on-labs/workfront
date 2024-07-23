@@ -2078,3 +2078,12 @@ body.contact-template main .default-content-wrapper img {
   }
 }
 
+/* Hide the "Documentation" breadcrumb item */
+.breadcrumb .breadcrumb-link-underline-effect:nth-child(2) {
+    display: none;
+}
+
+/* Hide the "Build" breadcrumb item */
+.breadcrumb .breadcrumb-link-underline-effect.category {
+    display: none;
+}
