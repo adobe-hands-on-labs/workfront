@@ -3,6 +3,7 @@
 }
 
 footer {
+  text-align:center;
   display: none;
   padding: 2rem;
   font-size: var(--type-body-xs-size);
