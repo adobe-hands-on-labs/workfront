@@ -736,4 +736,10 @@ if (window.location.hostname === 'www.hlx.live') {
 }
 */
 
+ document.querySelectorAll('.breadcrumb-link-underline-effect').forEach(function(element) {
+    if (element.textContent.trim() === 'Documentation' || element.textContent.trim() === 'Build') {
+      element.parentElement.style.display = 'none';
+    }
+  });
+
 loadPage(document);
