@@ -30,6 +30,10 @@
   color: var(--spectrum-blue);
 }
 
+.pagination .column.left{
+  display : none;
+}
+
 .pagination .column.left p > span {
   margin-right: 8px;
 }
