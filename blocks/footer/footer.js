@@ -133,10 +133,12 @@ export default async function decorate(block) {
 
   // re-organize the footer into 2 sections
   const footerCTAButton = extractCTAButton(footer);
-  const footerNavSection = decorateFooterNavSection(footer, footerCTAButton);
-  const footerCopyrightSection = decoratefooterCopyrightSection(footer);
-  footer.innerHTML = '';
-  footer.append(footerNavSection, footerCopyrightSection);
+  if(footerCTAButton){
+    const footerNavSection = decorateFooterNavSection(footer, footerCTAButton);
+    const footerCopyrightSection = decoratefooterCopyrightSection(footer);
+    footer.innerHTML = '';
+    footer.append(footerNavSection, footerCopyrightSection);
+  }
 
   block.append(footer);
   block.classList.add('new-footer'); // add class for the styles
