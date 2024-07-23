@@ -2077,3 +2077,13 @@ body.contact-template main .default-content-wrapper img {
     padding: 0 var(--header-container-desktop-x-padding);
   }
 }
+
+
+.breadcrumb-link-underline-effect.category {
+  display: none;
+}
+
+.breadcrumb-link-underline-effect:nth-of-type(2),
+.breadcrumb-link-underline-effect:nth-of-type(3) {
+  display: none;
+}
